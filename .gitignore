@@ -1,0 +1,8 @@
+# IDE-specific files
+.vscode
+.idea
+
+#Development-specific files
+__pycache__
+*.log
+*.env
