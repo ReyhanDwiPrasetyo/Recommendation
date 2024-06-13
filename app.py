@@ -24,7 +24,7 @@ def recommend():
     text = input_user["text"]
     model = ArticleRecommendation()
     result = model.recommendation(
-        os.getenv('CSV_PATH'),
+        "C:\Users\Reyhan Dwi\Documents\Reyhan\Bangkit Academy\Final Capstone\englishArticle.csv",
         text,
     )
     return result.to_json(orient="records", lines=True)
