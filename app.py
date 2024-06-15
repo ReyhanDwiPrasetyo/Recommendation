@@ -24,7 +24,7 @@ def recommend():
     text = input_user["text"]
     model = ArticleRecommendation()
     result = model.recommendation(
-        "C:\Users\Reyhan Dwi\Documents\Reyhan\Bangkit Academy\Final Capstone\englishArticle.csv",
+        "C:/Users/Reyhan Dwi/Documents/Reyhan/Bangkit Academy/Final Capstone/englishArticle.csv",
         text,
     )
     return result.to_json(orient="records", lines=True)
